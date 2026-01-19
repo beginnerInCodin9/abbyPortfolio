@@ -8,3 +8,9 @@ body {
 #introduction {
     background-color: #3B4046; /* set background color to dark cyan */
 }
+
+.profile-img {
+    width: 10rem;
+    max-width: 150px;
+    height: auto;
+}
