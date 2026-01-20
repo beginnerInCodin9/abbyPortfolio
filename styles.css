@@ -13,3 +13,12 @@ body {
     max-width: 200px;
     height: auto;
 }
+
+.nav-link {
+    color: white; /* set navigation link color to white */
+}
+
+.navbar .navlink:hover {
+    background-color: gray;
+    color: black;
+}
