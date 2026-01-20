@@ -20,6 +20,6 @@ body {
 }
 
 .navbar .nav-link:hover {
-    background-color: gray;
+    background-color: white !important;
     color: black !important;
 }
