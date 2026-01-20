@@ -17,7 +17,6 @@ body {
 .navbar-dark .navbar .nav-link {
     color: white !important;
     padding: 0.5rem 1rem;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar-dark .navbar .nav-link:hover {
