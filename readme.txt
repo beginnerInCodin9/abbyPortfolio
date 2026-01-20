@@ -14,10 +14,10 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 - 1/1 Readme
 - 1.5/2 Basic HTML content
 - 0.5/1 Basic CSS styling
-- 0/1 Advanced feature
+- 1/1 Advanced feature
 - 1.5/2 Responsive layout
 - 1/1 Passes validation checks
-- 2/2 Embraces spirit of the assignment
+- 1/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
@@ -43,65 +43,70 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
-These are the prompts I feed AI addressing my point of confusion, and the responses I received:
-1. How do I git commit the codes I wrote in VSCode to git?
-    I'll help you commit your code to Git in VS Code. Let me first check if your workspace has Git initialized: 
+    These are the prompts I feed AI addressing my point of confusion, and the responses I received:
+    1. How do I git commit the codes I wrote in VSCode to git?
+        I'll help you commit your code to Git in VS Code. Let me first check if your workspace has Git initialized: 
 
-    Ran terminal command: git status
+        Ran terminal command: git status
 
-    Great! Git is already initialized in your workspace. Here's how to commit your code:
+        Great! Git is already initialized in your workspace. Here's how to commit your code:
 
-    **In VS Code, use the Source Control panel:**
+        **In VS Code, use the Source Control panel:**
 
-    1. Click the **Source Control icon** in the left sidebar (looks like a branching icon)
-    2. You'll see your modified files listed under "Changes"
-    3. **Stage your files:**
-        - Click the **+** icon next to each file, or click **+** next to "Changes" to stage all
-    4. **Write a commit message:**
-        - In the message box at the top, type a descriptive message (e.g., "Add portfolio content")
-    5. **Commit:**
-        - Press `Ctrl+Enter` or click the **Commit** button (checkmark icon)
-    6. **Push to remote (optional):**
-        - Click the **...** menu and select "Push" to upload to GitHub/your remote repository
+        1. Click the **Source Control icon** in the left sidebar (looks like a branching icon)
+        2. You'll see your modified files listed under "Changes"
+        3. **Stage your files:**
+            - Click the **+** icon next to each file, or click **+** next to "Changes" to stage all
+        4. **Write a commit message:**
+            - In the message box at the top, type a descriptive message (e.g., "Add portfolio content")
+        5. **Commit:**
+            - Press `Ctrl+Enter` or click the **Commit** button (checkmark icon)
+        6. **Push to remote (optional):**
+            - Click the **...** menu and select "Push" to upload to GitHub/your remote repository
 
-    **Or use the terminal:**
-    ```powershell
-    git add .
-    git commit -m "Your commit message here"
-    git push
-    ```
+        **Or use the terminal:**
+        ```powershell
+        git add .
+        git commit -m "Your commit message here"
+        git push
+        ```
 
-    Since your working tree is currently clean, make sure you've saved your changes to the files in VS Code first. Once you modify index.html or other files, they'll appear in the Source Control panel.
+        Since your working tree is currently clean, make sure you've saved your changes to the files in VS Code first. Once you modify index.html or other files, they'll appear in the Source Control panel.
 
-2. I created an asset folder and added my professional headshot photo to the folder, photo titled "professionalHeadshot.JPG". I wrote this line to add the image to my website: "<img src="professionalHeadshot.JPG" alt="Professional headshot of Abby Pho">", but the image is not showing up in the website. Has I wrote something wrong?
-    Yes, I found the issue! The image is in your assets folder, but your `src` attribute is pointing to the root directory. You need to update the image path to include the folder:
+    2. I created an asset folder and added my professional headshot photo to the folder, photo titled "professionalHeadshot.JPG". I wrote this line to add the image to my website: "<img src="professionalHeadshot.JPG" alt="Professional headshot of Abby Pho">", but the image is not showing up in the website. Has I wrote something wrong?
+        Yes, I found the issue! The image is in your assets folder, but your `src` attribute is pointing to the root directory. You need to update the image path to include the folder:
 
-    Change:
-    ```html
-    <img src="professionalHeadshot.JPG" alt="Professional headshot of Abby Pho">
-    ```
+        Change:
+        ```html
+        <img src="professionalHeadshot.JPG" alt="Professional headshot of Abby Pho">
+        ```
 
-    To:
-    ```html
-    <img src="assets/professionalHeadshot.JPG" alt="Professional headshot of Abby Pho">
-    ```
+        To:
+        ```html
+        <img src="assets/professionalHeadshot.JPG" alt="Professional headshot of Abby Pho">
+        ```
 
-    Let me fix that for you: 
+        Let me fix that for you: 
 
-    Using "Replace String in File"
+        Using "Replace String in File"
 
 
-    ```
+        ```
 
-    ```
-    Fixed! The path now correctly points to professionalHeadshot.JPG. Your image should now display on the website.
+        ```
+        Fixed! The path now correctly points to professionalHeadshot.JPG. Your image should now display on the website.
 
-    Made changes.
+        Made changes.
 
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
+    I did not consult any classmates on this assignment, but I did discuss the basics of HTML and CSS with a transfer-student
+    friend of mine, who has a decent knowledge of HTML and CSS. He generously explains to me the concept of specific command
+    such as 'd-flex' (I was agonizing over how to put elements side by side) and rem (I was a bit confused about how it is sized).
+    He also adviced me to stick with simple implementations for now and not to worry too much about the design (I spent about two 
+    hours trying to figure out the navigation bar) until I have the entire website flesh out.
 
 
 7. Is there anything special we need to know in order to run your code?
+    No, there should not be anything special because I was trying to make everything as straight-forward as I can.
 
