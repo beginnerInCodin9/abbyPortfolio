@@ -16,10 +16,10 @@ body {
 
 .navbar .nav-link {
     color: white !important;
+    display: block;
 }
 
 .navbar .nav-link:hover {
     background-color: white !important;
     color: black !important;
-    padding: 0;
 }
