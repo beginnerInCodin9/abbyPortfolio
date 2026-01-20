@@ -14,12 +14,12 @@ body {
     height: auto;
 }
 
-.navbar-dark .navbar .nav-link {
+.navbar .navbar-dark .nav-link {
     color: white !important;
     padding: 0.5rem 1rem;
 }
 
-.navbar-dark .navbar .nav-link:hover {
+.navbar .navbar-dark .nav-link:hover {
     background-color: gray;
     color: black !important;
 }
