@@ -4,8 +4,8 @@ body {
     font-family: Verdana, sans-serif, Tahoma, Helvetica, Arial;
 }
 
-#introduction {
-    background-color: #3B4046; /* set background color to dark cyan */
+header {
+    background-color: #3B4046 !important; /* set background color to dark cyan */
 }
 
 .profile-img {
