@@ -34,10 +34,14 @@ Talking to classmates about class material, assignment requirements, etc. is a g
     Some advanced features I included in my portfolio website are:
         - Using 'd-flex', 'flex-column', and 'flex-md-row' to position the elements.
         - A navigation bar that remains at the top no matter how far you scroll down.
+        - An embedded PDF of my resume and a download button (for in case the browser
+          does not support embedded PDFs).
 
 
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
+    Yes, I included detailed descriptions of the cover arts (images) for the projects that I worked on and received warnings that they may be too long. But I ultimately decided to keep the descriptions because they do indeed described the images
+    and I think the images are an important part of making the projects appealing to potential recruiter or any interested person, so I do not think they really fit the "decorative element" category.
 
 
 

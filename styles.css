@@ -45,3 +45,10 @@ footer {
     background-color: lightgray !important; /* set button hover background color to light gray */
     color: black !important; /* keep button text color white on hover */
 }
+
+.resume-embed-container {
+    width: 90%;
+    height: 70vh;
+    border: 1px solid #ccc; /* light gray border */
+    margin-bottom: 1rem;
+}
