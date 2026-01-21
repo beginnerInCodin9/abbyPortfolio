@@ -21,7 +21,7 @@ EMAIL: dppho@uci.edu
     <!-- Navigation bar for the website. Sticks to the top as you scroll down -->
     <nav class="navbar navbar-expand-md navbar-dark bg-black sticky-top">
       <div class="container justify-content-center">
-        <ul class ="navbar-nav gap-5">
+        <ul class ="navbar-nav gap-3 gap-md-5">
           <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link fw-bold" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link fw-bold" href="resume.html">Resume</a></li>
@@ -38,14 +38,12 @@ EMAIL: dppho@uci.edu
       </div>
 
       <!-- Embed resume PDF -->
-      <div class="resume-embed-container align-items-center justify-content-center mt-2">
-        <embed src="assets/Resume.pdf" type="application/pdf" class="pdf-dimensions">
-        
-        <noembed>
-          <div class="mb-4 text-center text-black">
+      <div class="resume-embed-container d-flex align-items-center justify-content-center mt-2">
+        <object data="assets/Resume.pdf" type="application/pdf" class="pdf-dimensions">
+          <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center text-black p-4">
             <p>Your browser does not support embedded PDFs. Please select the button above to download the resume instead.</p>
           </div>
-        </noembed>
+        </object>
       </div>
     </main>
 
