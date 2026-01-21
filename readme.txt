@@ -46,7 +46,11 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 
 4. How long, in hours, did it take you to complete this assignment?
-
+    In total, this resume took me about two weeks to complete. With three days of designing the portfolio on Figma,
+    a week and a half of deep-diving into the internet, watching tutorials, and discussing with a friend to grasp
+    the basic of HTML and CSS (it is simpler than I originally fear, just a lot of shorthands that I need to remember),
+    and about six days of actually coding the website (including the time I spent using an online compiler to test
+    out codes).
 
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
