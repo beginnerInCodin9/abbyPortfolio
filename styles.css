@@ -57,13 +57,13 @@ footer {
     height: auto;
 }
 
-.custom-download-btn {
+.custom-button {
     background-color: #3B4046 !important; /* set button background color to dark cyan */
     color: white !important; /* set button text color to white */
     border: none !important; /* remove button border */
 }
 
-.custom-download-btn:hover {
+.custom-button:hover {
     background-color: lightgray !important; /* set button hover background color to light gray */
     color: black !important; /* keep button text color white on hover */
 }
@@ -94,4 +94,12 @@ footer {
     padding: 0 0.5rem;
     color: black; /* black text */
     font-weight: bold;
+}
+
+.custom-input {
+    border: none !important; /* remove default border */
+    border-bottom: 2px solid black !important; /* add black bottom border */
+    border-radius: 0 !important; /* remove border radius */
+    background-color: transparent; /* transparent background */
+    padding-left: 0;
 }
