@@ -108,6 +108,140 @@ Talking to classmates about class material, assignment requirements, etc. is a g
             Fixed! The path now correctly points to professionalHeadshot.JPG. Your image should now display on the website.
 
             Made changes.
+    
+        3. User: Is there a way I can fixed .intro-heading::after to keep the line after text from overflowing and causing scrolling while still keeping a line that expanded the remaining space after the text?
+
+            GitHub Copilot: Yes! The issue is that `width: 100%` on an inline-block element combined with `margin-right: 100%` is causing overflow. The best solution is to use **flexbox** to make the line fill the remaining space naturally without overflow: 
+
+            Using "Replace String in File"
+
+
+            ```
+
+            ```
+            Done! The changes:
+            - **Changed `.intro-heading` to `display: flex`** - This makes it a flex container so the line can fill remaining space naturally
+            - **Used `flex-grow: 1`** on the `::after` - This makes the line expand to fill available space without overflow
+            - **Added `gap: 1rem`** - Replaces the margin-left for cleaner spacing
+            - **Added `min-width: 0`** - Prevents the flex item from overflowing past the container
+
+            Now the line will expand to fill remaining space after the text without causing horizontal scrolling.
+
+            Made changes.
+
+            User: But now on small screen, the line does not show up at all :((
+
+            GitHub Copilot: The line is likely disappearing on small screens because the flex container is wrapping or the line is getting zero width. Let's fix this by ensuring it stays on one line and the line always gets some space: 
+
+            Using "Replace String in File"
+
+
+            ```
+
+            ```
+            Changes made:
+            - **Added `flex-wrap: nowrap`** - Prevents the line from wrapping to a new line
+            - **Added `overflow: hidden`** on the container - Hides any overflow while keeping content on one line
+            - **Added `flex-shrink: 0`** on the line - Prevents the line from shrinking below its minimum
+            - **Set `min-width: 3rem`** - Ensures the line always has a visible minimum width on small screens
+
+            Now the line should stay visible on all screen sizes while filling the available space and not causing scrolling.
+
+            Made changes.
+
+            User: But I want the line to start after the end of the text. Meaning, after the word "include" and not in the middle of the text lines.
+
+            GitHub Copilot: Using "Replace String in File"
+
+
+            ```
+
+            ```
+            Done! The key change:
+            - **Added `white-space: nowrap`** - Keeps all the text on a single line so the line only starts after the word "include", not in the middle
+            - **Changed to `overflow-x: auto`** - Allows the line to appear after the text even on small screens; it will scroll if absolutely necessary rather than hiding the line
+
+            Now the line will always appear immediately after "include" and expand to fill the remaining space, while keeping the text intact.
+
+            Made changes.
+
+            User: But I don't want the user to have to scroll to read the text. The line after the text is supposed to be a decorative element to fill the remaining empty line if the text is too long and wrap around to a second line. The line after text is there to fill up remaining space so that it looks less empty (since I already left a lot of empty space on my website).
+
+            GitHub Copilot: Using "Replace String in File"
+
+
+            ```
+
+            ```
+            Perfect! Now with `flex-wrap: wrap`:
+            - The text wraps naturally on small screens
+            - The line appears after the text on the same line
+            - The line fills remaining space without causing scrolling
+            - On small screens where there's no room, the line wraps to a new line below the text
+
+            The `flex: 1 1 3rem` makes the line grow to fill available space while maintaining a minimum width of 3rem.
+
+            Made changes.
+
+            User: But now the line appears on a second line instead of the line where the text ended.
+
+            GitHub Copilot: Using "Replace String in File"
+
+
+            ```
+
+            ```
+            Changed `flex: 1 1 3rem` to `flex: 1 1 0` - this makes the line start at 0 width (so it doesn't force a wrap) and then grow to fill remaining space on the same line. The `min-width: 3rem` ensures it's always visible.
+
+            Made changes.
+
+            User: That doesn't help.
+
+            GitHub Copilot: Using "Replace String in File"
+
+
+            ```
+
+            ```
+            Changed to `display: inline-flex` and simplified the line to `flex: 1`. This should keep the line on the same line as the text ends instead of wrapping it to a new line.
+
+            Made changes.
+
+            User: That still does not help....
+
+            GitHub Copilot: Using "Replace String in File"
+
+
+            ```
+
+            ```
+            Reverted to simpler `display: flex` without wrap. This will keep the text and line on the same line without wrapping. On small screens, if space is tight, you may need to accept either: 1) Line wraps to next line (current issue), or 2) Text/line shrinks, or 3) Slight horizontal scroll on very small screens. 
+
+            Which behavior would you prefer?
+
+            Made changes.
+
+            User: It's okay, can you provide comment for my current .intro-heading and .intro-heading::after explaining what the code does?
+
+            GitHub Copilot: Read [](file:///c%3A/Users/phoph/INF133/a1-portfolio-beginnerInCodin9/styles.css#25-25), lines 25 to 45
+
+            I see the current state is from my previous attempts. Let me check what the original was by reading the attachment provided earlier. Looking back at the original CSS provided, here are detailed comments for your current code: 
+
+            Using "Replace String in File"
+
+
+            ```
+
+            ```
+            Done! Added detailed comments explaining:
+            - What `display: inline-flex` does
+            - Why `flex-wrap: wrap` is used
+            - How the spacing and alignment work
+            - What the `::after` pseudo-element creates and how `flex: 1` makes it fill remaining space
+
+            Made changes.
+            (The entire 'Notable projects...' line is basically rewritten by AI because I couldn't figure out a way to make it work, but I ultimately gave up trying to keep the end of the text and the trailing line
+            on the same line because it is more of a decorative element that would be nice to have but isn't necessary for the overall look)
 
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
