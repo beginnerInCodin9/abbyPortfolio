@@ -58,14 +58,18 @@ footer {
     height: 100%;
 }
 
-contact-border-box {
+.contact-border-box {
+    position: relative;
     border: 2px solid black; /* black border */
-    border-radius: relative;
     margin-top: 2rem;
 }
 
-contact-title {
+.contact-title {
+    position: absolute;
+    top: -1.75rem;
+    left: 1rem;
+    background-color: white; /* white background */
+    padding: 0 0.5rem;
     color: black; /* black text */
     font-weight: bold;
-    position: relative;
 }
