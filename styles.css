@@ -24,6 +24,28 @@ header {
     color: black !important;
 }
 
+.overflow-hidden {
+    overflow-x: hidden; /* hide any overflowing content */
+}
+
+/* Creates a flex container for the heading and decorative line */
+.intro-heading {
+    display: inline-flex; /* displays as a flex container that wraps text content */
+    flex-wrap: wrap; /* allows items to wrap to the next line if needed */
+    align-items: center; /* vertically centers all items within the flex container */
+    gap: 1rem; /* adds 1rem spacing between the text and the line */
+    line-height: 1.5; /* gives space for the line to be centered vertically */
+    width: 100%; /* makes the container span full width of parent */
+}
+
+/* Creates a decorative line that appears after the heading text */
+.intro-heading::after {
+    content: ""; /* creates a pseudo-element with empty content */
+    height: 3px; /* makes the line 3 pixels tall */
+    background-color: #000000; /* set line color to black */
+    flex: 1; /* makes the line expand to fill remaining available space */
+}
+
 footer {
     background-color: #3B4046; /* set background color to dark cyan */
     color: white;
