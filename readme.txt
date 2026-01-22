@@ -253,5 +253,7 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 
 7. Is there anything special we need to know in order to run your code?
-    No, there should not be anything special because I was trying to make everything as straight-forward as I can.
+    No, there should not be anything special because I was trying to make everything as straight-forward as I can. In addition, this
+    is not a special need, but the form on my website does not actually send a message anywhere (I asked my friend and apparently, I
+    need a form service for this, but I haven't gotten to it yet).
 
